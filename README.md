@@ -15,4 +15,4 @@ Simple 2D Game Engine powered by OpenGL and Lua
 
 5 做这个最初的想法是用C++提供最基本的功能，用lua来实现游戏框架以及游戏业务，通过lua库来扩展游戏功能
 
-6 Bin的说明：Resource放的素材，Bomb, Tower, Tank, Snake放的demo的业务逻辑。GL是OpenGL的图形操作的封装。DS是基本的数据结构。Net是luaSocket。 Tower和Tank下的scene.lua封装的是简单游戏框架。
+6 Bin的说明：Resource放的素材，Bomb，Tower，Tank，Snake放的demo的业务逻辑。GL是OpenGL的图形操作的封装。DS是基本的数据结构。Net是luaSocket。 Tower和Tank下的scene.lua封装的是简单游戏框架。
