@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{236DC42C-872E-4BDD-924C-0FF9F4C4D950}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My6RoomKTV</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>.\Lua\;.\Tcmalloc\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\OpenGL\glew\;.\OpenGL\;.\;.\UI\;.\Lua\;.\Binding\;.\Tcmalloc\;$(IncludePath)</IncludePath>
+    <LibraryPath>.\Lua;.\tcmalloc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\OpenGL\;.\OpenGL\glew\;.\UI\;.\;.\Lua\;.\Tcmalloc\;.\Binding\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4273;4244;4049;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>lua-5.2.2.lib;libtcmalloc_minimal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DisableSpecificWarnings>4800;4244</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>lua-5.2.2.lib;libtcmalloc_minimal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Binding\TextRender.cpp" />
+    <ClCompile Include="Binding\OpenGLBinding.cpp" />
+    <ClCompile Include="Binding\LuaVM.cpp" />
+    <ClCompile Include="Binding\RenderTextureBinding.cpp" />
+    <ClCompile Include="Binding\TextRenderBinding.cpp" />
+    <ClCompile Include="Binding\TextureBinding.cpp" />
+    <ClCompile Include="Binding\VAOBinding.cpp" />
+    <ClCompile Include="Binding\VBOBinding.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpenGL\FileSystem.cpp" />
+    <ClCompile Include="OpenGL\GLBuffer.cpp" />
+    <ClCompile Include="OpenGL\GLCache.cpp" />
+    <ClCompile Include="OpenGL\GLDevice.cpp" />
+    <ClCompile Include="OpenGL\glew\glew.c" />
+    <ClCompile Include="OpenGL\GLFontTexture.cpp" />
+    <ClCompile Include="OpenGL\GLProgram.cpp" />
+    <ClCompile Include="OpenGL\GLRenderTarget.cpp" />
+    <ClCompile Include="OpenGL\GLShaderManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_OuterGlow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionColor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTexture1D.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTextureColor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTextureUColor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionUColor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_TextRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLTexture.cpp" />
+    <ClCompile Include="OpenGL\GLVertexArray.cpp" />
+    <ClCompile Include="OpenGL\stb_image.c" />
+    <ClCompile Include="UI\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Binding\Color.h" />
+    <ClInclude Include="Binding\LuaBinding.h" />
+    <ClInclude Include="Binding\TextRender.h" />
+    <ClInclude Include="Binding\OpenGLBinding.h" />
+    <ClInclude Include="Binding\LuaVM.h" />
+    <ClCompile Include="Binding\ProgramBinding.cpp">
+      <FileType>CppHeader</FileType>
+    </ClCompile>
+    <ClInclude Include="Binding\ProgramBinding.h" />
+    <ClInclude Include="Binding\RenderTextureBinding.h" />
+    <ClInclude Include="Binding\TextRenderBinding.h" />
+    <ClInclude Include="Binding\TextureBinding.h" />
+    <ClInclude Include="Binding\VAOBinding.h" />
+    <ClInclude Include="Binding\VBOBinding.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="Lua\lauxlib.h" />
+    <ClInclude Include="Lua\lua.h" />
+    <ClInclude Include="Lua\lua.hpp" />
+    <ClInclude Include="Lua\luaconf.h" />
+    <ClInclude Include="Lua\lualib.h" />
+    <ClInclude Include="OpenGL\FileSystem.h" />
+    <ClInclude Include="OpenGL\GLBuffer.h" />
+    <ClInclude Include="OpenGL\GLCache.h" />
+    <ClInclude Include="OpenGL\GLCommon.h" />
+    <ClInclude Include="OpenGL\GLDevice.h" />
+    <ClInclude Include="OpenGL\glew\glew.h" />
+    <ClInclude Include="OpenGL\glew\glxew.h" />
+    <ClInclude Include="OpenGL\glew\wglew.h" />
+    <ClInclude Include="OpenGL\GLFontTexture.h" />
+    <ClInclude Include="OpenGL\GLProgram.h" />
+    <ClInclude Include="OpenGL\GLRenderTarget.h" />
+    <ClInclude Include="OpenGL\GLShaderManager.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLTexture.h" />
+    <ClInclude Include="OpenGL\GLVertexArray.h" />
+    <ClInclude Include="OpenGL\stb_image.h" />
+    <ClInclude Include="tcmalloc\tcmalloc.h" />
+    <ClInclude Include="UI\Window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

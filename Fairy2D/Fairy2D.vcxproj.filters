@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="opengl">
+      <UniqueIdentifier>{e65c084e-8861-49c0-be1c-2419abd07298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opengl\shader">
+      <UniqueIdentifier>{b16940b4-3e3e-4c2e-b85c-9eac219707dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opengl\glew">
+      <UniqueIdentifier>{feae5e5c-3e64-41c4-8c39-f60b74629511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{2db3c247-b20e-44d0-acd5-0cbcd26dca85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opengl\object">
+      <UniqueIdentifier>{fe87e352-9e62-40ab-a13b-e645591982d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{56776522-d46e-4ef0-8bf0-0b138387f43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="binding">
+      <UniqueIdentifier>{c19395a2-814d-44d6-8dbb-7f6e1349a414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tcmalloc">
+      <UniqueIdentifier>{c168c76a-e8bf-4e8d-a0d5-7e2c198f0fe6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenGL\stb_image.c">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_OuterGlow.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionColor.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTexture1D.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTextureColor.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\glew\glew.c">
+      <Filter>opengl\glew</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpenGL\GLDevice.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\FileSystem.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShaderManager.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLBuffer.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLProgram.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLRenderTarget.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLTexture.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLVertexArray.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLFontTexture.cpp">
+      <Filter>opengl\object</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionUColor.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_PositionTextureUColor.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLShader_TextRender.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\LuaVM.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\ProgramBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\RenderTextureBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\TextureBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\VAOBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\VBOBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\OpenGLBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLCache.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\TextRenderBinding.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="Binding\TextRender.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="UI\Window.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWindow.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGL\stb_image.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\glew\glew.h">
+      <Filter>opengl\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\glew\glxew.h">
+      <Filter>opengl\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\glew\wglew.h">
+      <Filter>opengl\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLCommon.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLDevice.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLShaderManager.h">
+      <Filter>opengl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLBuffer.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLProgram.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLRenderTarget.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLTexture.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLVertexArray.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLFontTexture.h">
+      <Filter>opengl\object</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lauxlib.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.hpp">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\luaconf.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lualib.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\LuaVM.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\RenderTextureBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\ProgramBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\TextureBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\VBOBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\VAOBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\OpenGLBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\FileSystem.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="tcmalloc\tcmalloc.h">
+      <Filter>tcmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLCache.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\TextRenderBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\Color.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\TextRender.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="Binding\LuaBinding.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h" />
+    <ClInclude Include="UI\Window.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWindow.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
